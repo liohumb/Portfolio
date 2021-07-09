@@ -625,13 +625,19 @@ button_icon {
 }
 
 .footer_title {
+    font-family: 'Source Code Pro', monospace;
     font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
 .footer_subtitle {
+    font-family: 'Source Code Pro', monospace;
     font-size: var(--small-font-size);
 }
+
+.footer_icon {
+    font-size: 2rem;
+    margin-right: var(--mb-0-75);}
 
 .footer_links {
     display: flex;
