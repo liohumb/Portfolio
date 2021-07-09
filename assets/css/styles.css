@@ -88,7 +88,6 @@ body.dark-theme {
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
 }
 
 html {
@@ -306,39 +305,10 @@ img {
      margin-bottom: var(--mb-2);
 }
 
-home_scroll {
-    display: none;
-}
-
-.home_scroll-button {
-    color: var(--first-color);
-    transition: .3s;
-}
-
-.home_scroll-button:hover {
-    transform: translate(.25rem);
-}
-
-.home_scroll-mouse {
-    font-size: 2rem;
-}
-
-.home_scroll-name {
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-}
-
-.home_scroll-arrow {
-    font-size: 1.25rem;
-}
-
 .button {
-    display: inline-block;
     background-color: var(--first-color);
     color: #fff;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
 }
@@ -349,7 +319,6 @@ home_scroll {
 
 button_icon {
     font-size: 1.25rem;
-    margin-left: var(--mb-0-5);
     transition: .3s;
 }
 
@@ -639,16 +608,6 @@ button_icon {
     font-size: 2rem;
     margin-right: var(--mb-0-75);}
 
-.footer_links {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-}
-
-.footer_link:hover {
-    color: var(--first-color-lighter);
-}
-
 .footer_social {
     font-size: 1.25rem;
     margin-right: var(--mb-1-5);
@@ -667,7 +626,6 @@ button_icon {
 
 .footer_title,
 .footer_subtitle,
-.footer_link,
 .footer_social {
     color: #fff;
 }
@@ -719,9 +677,6 @@ button_icon {
 }
 
 @media screen and (min-width: 568px) {
-    /* .home_content {
-        grid-template-columns: max-content 1fr 1fr;
-    } */
 
     .home_data {
         grid-column: initial;
@@ -743,6 +698,22 @@ button_icon {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .footer_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer_bg {
+        padding: 3rem 0 3.5rem;
+    }
+
+    .footer_socials {
+        justify-self: flex-end;
+    }
+
+    .footer_copy {
+        margin-top: 4.5rem;
     }
 }
 
@@ -850,11 +821,6 @@ button_icon {
 
     .footer_bg {
         padding: 3rem 0 3.5rem;
-    }
-
-    .footer_links {
-        flex-direction: row;
-        column-gap: 2rem;
     }
 
     .footer_socials {
