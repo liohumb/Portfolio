@@ -317,21 +317,18 @@ img {
     padding: .5rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
-    margin-left: 10rem;
+    margin-left: 5.1rem;
+    margin-top: 3rem;
 }
 
 .button:hover {
     background-color: var(--first-color-alt);
 }
 
-button_icon {
+.button_icon {
     font-size: 1.25rem;
     transition: .3s;
-}
-
-.button-flex {
-    display: inline-flex;
-    align-items: center;
+    margin-left: .5rem;
 }
 
 .about_img {
@@ -490,11 +487,7 @@ button_icon {
 .qualification_button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    cursor: pointer;
-}
-
-.qualification_button:hover {
-    color: var(--first-color);
+    padding: 0 3rem 0 1rem;
 }
 
 .qualification_icon{
@@ -717,6 +710,7 @@ button_icon {
 
     .footer_socials {
         justify-self: flex-end;
+        padding-top: 1rem;
     }
 
     .footer_copy {
