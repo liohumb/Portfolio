@@ -47,7 +47,7 @@ skillHeader.forEach((el) =>{
  
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+const iconTheme = 'uil-sunset'
 
 
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -55,13 +55,13 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moonset' : 'uil-sunset'
 
 
 if (selectedTheme) {
 
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+  themeButton.classList[selectedIcon === 'uil-moonset' ? 'add' : 'remove'](iconTheme)
 }
 
 
