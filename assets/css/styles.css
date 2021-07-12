@@ -179,7 +179,7 @@ img {
 }
 
 .nav_item {
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
 .nav_toggle {
@@ -296,6 +296,7 @@ img {
 
 .home_description {
      margin-bottom: var(--mb-2);
+     margin-right: 6rem;
 }
 
 .button {
@@ -737,6 +738,7 @@ img {
 
     .about_img {
         width: 350px;
+        margin-bottom: 6rem;
     }
 
     .about_description {
