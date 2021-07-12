@@ -555,7 +555,7 @@ img {
 
 .footer_bg {
     background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
+    padding: .5rem 0 .5rem;
 }
 
 .footer_title {
@@ -661,7 +661,7 @@ img {
     }
 
     .footer_bg {
-        padding: 3rem 0 3.5rem;
+        padding: .5rem 0 .5rem;
     }
 
     .footer_socials {
@@ -770,7 +770,7 @@ img {
     }
 
     .footer_bg {
-        padding: 3rem 0 3.5rem;
+        padding: .5rem 0 .5rem;
     }
 
     .footer_socials {
