@@ -12,6 +12,7 @@
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
+    --shadow-color: hsl(var(--hue-color), 11%, 37%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
@@ -19,6 +20,7 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --opacity: .5;
 
     --body-font: 'Poppins', sans-serif;
 
@@ -60,6 +62,7 @@
 /* DARK MODE */
 body.dark-theme {
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --shadow-color: hsl(var(--hue-color), 41%, 10%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
@@ -67,6 +70,7 @@ body.dark-theme {
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    --opacity: 1;
 }
 
 .nav_btns {
@@ -164,22 +168,8 @@ img {
     font-family: 'Source Code Pro', monospace;
 }
 
-.nav_logo,
-.nav_toggle {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-}
-
 .nav_logo:hover {
     color: var(--first-color);
-}
-
-.nav_menu {
-    margin-right: 10rem;
-}
-
-.nav_item {
-    margin-left: 3rem;
 }
 
 .nav_toggle {
@@ -189,6 +179,20 @@ img {
 
 .nav_toggle:hover{
     color: var(--first-color);
+}
+
+.nav_logo,
+.nav_toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav_menu {
+    margin-right: 10rem;
+}
+
+.nav_item {
+    margin-left: 3rem;
 }
 
 /* BARRE DE NAVIGATION MOBILE */
@@ -211,6 +215,10 @@ img {
 
     .nav_menu .nav_link_title{
         display:none
+    }
+
+    .skills_logo {
+        display: none;
     }
 }
 
@@ -305,7 +313,7 @@ img {
     padding: var(--mb-0-5);
     border-radius: var(--mb-0-5);
     font-weight: var(--font-medium);
-    margin-left: 9.1rem;
+    margin-left: 5.2rem;
 }
 
 .button:hover {
@@ -324,6 +332,7 @@ img {
     border-radius: var(--mb-0-5);
     justify-self: center;
     align-self: center;
+    box-shadow: 0px 0px 50px var(--shadow-color);
 }
 
 .about_description {
@@ -386,6 +395,28 @@ img {
 .skills_name {
      font-size: var(--normal-font-size);
      font-weight: var(--font-medium);
+     font-family: 'Source Code Pro', monospace;
+}
+
+.skills_logo {
+    width: 35px;
+    height: 35px;
+    opacity: var(--opacity);
+}
+
+.css {
+    margin-left: 1rem;
+}
+
+.js, .ps {
+    margin-right: 3rem;
+}
+
+.mysql {
+    margin-right: 1rem;
+}
+.ae {
+    margin-right: 5rem;
 }
 
 .skills_bar,
@@ -417,12 +448,20 @@ img {
      width: 40%;
 }
 
+.skills_mysql {
+    width: 30%;
+}
+
 .skills_ruby {
      width: 50%;
 }
 
 .skills_photoshop {
      width: 75%;
+}
+
+.skills_aftereffects {
+    width: 60%;
 }
 
 .skills_close .skills_list {
@@ -624,6 +663,10 @@ img {
 
     .skills_title {
         font-size: var(--normal-font-size);
+    }
+
+    .skills_logo {
+        display: none;
     }
 
     .cv_data {
