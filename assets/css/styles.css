@@ -45,6 +45,7 @@
     --mb-3: 3rem;
 
     --z-fixed: 100;
+    --z-modal: 1000;
 }
 
 @media screen and (min-width: 968px) {
@@ -131,6 +132,13 @@ img {
 
 .section_title {
     font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3);
+    text-align: center;
+}
+
+.section_subtitle {
+    display: block;
+    font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
     text-align: center;
 }
@@ -307,6 +315,7 @@ img {
      margin-right: 6rem;
 }
 
+/* BOUTTON */
 .button {
     background-color: var(--first-color);
     color: #fff;
@@ -324,6 +333,27 @@ img {
     font-size: 1.25rem;
     transition: .3s;
     margin-left: var(--mb-0-5);
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-small {
+    padding: .75rem 1rem;
+}
+
+.button-link {
+    padding: 0;
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.button-link:hover {
+    background-color: transparent;
+    color: var(--first-color-alt);
+
 }
 
 /* A PROPOS */
@@ -532,6 +562,67 @@ img {
     height: 100%;
     background-color: var(--first-color);
     transform: translate(6px, -7px);
+}
+
+.services_button {
+    cursor: pointer;
+}
+
+.cv_detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.cv_detail-content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.cv_detail-services {
+    row-gap: 1rem;
+}
+
+.cv_detail-service {
+    display: flex;
+}
+
+.cv_detail-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.cv_detail-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.cv_detail-icon {
+    color: var(--first-color);
+    margin-right: var(--mb-0-25);
+}
+
+.active-modal {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* CONTACT */

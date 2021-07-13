@@ -42,6 +42,29 @@ skillHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
+// VARIABLES CURRICULUM VITÆ
+const modalViews = document.querySelectorAll('.cv_detail'),
+       modalBtns = document.querySelectorAll('.services_button'),
+      modalCloses = document.querySelectorAll('.cv_detail-close')
+
+let modal = function (modalClick) {
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+    })
+})
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
+
  // VARIABLES DARK MODE
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
