@@ -43,24 +43,24 @@ skillHeader.forEach((el) =>{
 })
 
 // VARIABLES CURRICULUM VITÆ
-const modalViews = document.querySelectorAll('.cv_detail'),
-       modalBtns = document.querySelectorAll('.services_button'),
-      modalCloses = document.querySelectorAll('.cv_detail-close')
+const cvViews = document.querySelectorAll('.cv_detail'),
+       cvBtns = document.querySelectorAll('.services_button'),
+     cvCloses = document.querySelectorAll('.cv_detail-close')
 
-let modal = function (modalClick) {
-    modalViews[modalClick].classList.add('active-modal')
+let cv = function (cvClick) {
+    cvViews[cvClick].classList.add('active-cv')
 }
 
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () =>{
-        modal(i)
+cvBtns.forEach((cvBtn, i) => {
+    cvBtn.addEventListener('click', () =>{
+        cv(i)
     })
 })
 
-modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () =>{
-        modalViews.forEach((modalView) =>{
-            modalView.classList.remove('active-modal')
+cvCloses.forEach((cvClose) => {
+    cvClose.addEventListener('click', () =>{
+        cvViews.forEach((cvView) =>{
+            cvView.classList.remove('active-cv')
         })
     })
 })

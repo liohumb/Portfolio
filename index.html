@@ -82,7 +82,7 @@
                                     work for you
                                 </h1>
                                 <p class="home_description">En pleine formation, j'expérimente différents langages de programations et frameworks.</p>
-                                <a href="#contact" class="button button-flex">
+                                <a href="#contact" class="button button-flex button-hero ">
                                     Contactez moi<i class="uil uil-comment-dots button_icon"></i>
                                 </a>
                             </div>
@@ -107,8 +107,8 @@
                                 Je cherche avant tout obtenir de l'expérience auprès de dévellopeur senior afin de trouver cette autonomie qui me permettra de devenir indépendant et à l'aise avec mon code.
                             </p>
 
-                            <a download="" href="assets/pdf/CV.pdf" target="_blank" class="button button-flex" id="button-pdf">
-                                Télécharger CV <i class="uil uil-file-download-alt button_icon"></i>
+                            <a download="" href="#cv" class="button button-flex button-about" id="button-pdf">
+                                CV <i class="uil uil-window-grid button_icon"></i>
                             </a>
 
                         </div>
@@ -491,6 +491,13 @@
                     </div>
 
                 </section>
+
+                <div class="button_cv">
+                    <a download="" href="assets/pdf/CV.pdf" target="_blank" class="button button-flex button-cv" id="button-pdf">
+                        Télécharger CV <i class="uil uil-file-download-alt button_icon"></i>
+                    </a>
+                </div>
+                
 <!-- CONTACT -->
                 <section class="contact section" id="contact">
 
@@ -526,26 +533,22 @@
                             </div>
                         </div>
 <!-- FORMULAIRE DE CONTACT -->
-                        <form action="" class="contact_form grid">
+                        <form action="mail.php" method="POST" class="contact_form grid">
                             <div class="contact_inputs grid">
                                 <div class="contact_content">
                                     <label for="name" class="contact_label">Nom</label>
-                                    <input type="text" class="contact_input">
+                                    <input type="text" id="nom" class="contact_input">
                                 </div>
                                 <div class="contact_content">
                                     <label for="mail" class="contact_label">Email</label>
-                                    <input type="email" class="contact_input">
-                                </div>
-                                <div class="contact_content">
-                                    <label for="subjet" class="contact_label">Sujet</label>
-                                    <input type="text" class="contact_input">
+                                    <input type="email" id="mail" class="contact_input">
                                 </div>
                                 <div class="contact_content">
                                     <label for="msg" class="contact_label">Mesage</label>
-                                    <textarea name="msg" id="" cols="0" rows="7" class="contact_input"></textarea>
+                                    <textarea name="msg" id="message" cols="0" rows="7" class="contact_input"></textarea>
                                 </div>
                                 <div>
-                                    <a href="#" class="button button-flex">
+                                    <a href="#" class="button button-flex button-contact">
                                         Envoyer
                                         <i class="uil uil-message button_icon"></i>
                                     </a>

@@ -45,7 +45,7 @@
     --mb-3: 3rem;
 
     --z-fixed: 100;
-    --z-modal: 1000;
+    --z-cv: 1000;
 }
 
 @media screen and (min-width: 968px) {
@@ -319,10 +319,12 @@ img {
 .button {
     background-color: var(--first-color);
     color: #fff;
-    padding: var(--mb-0-5);
+    padding-left: .5rem;
+    padding-right: .5rem;
     border-radius: var(--mb-0-5);
     font-weight: var(--font-medium);
     margin-left: 5.2rem;
+    margin-top: 2rem;
 }
 
 .button:hover {
@@ -354,6 +356,24 @@ img {
     background-color: transparent;
     color: var(--first-color-alt);
 
+}
+
+.button-hero {
+    margin-left: 9.2rem;
+}
+
+.button-about {
+    margin-left: 16.9rem;
+}
+
+.button_cv {
+    display: flex;
+    justify-content: center;
+    margin-right: 4rem;
+}
+
+.button-contact {
+    margin-left: 8rem;
 }
 
 /* A PROPOS */
@@ -579,7 +599,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
-    z-index: var(--z-modal);
+    z-index: var(--z-cv);
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -604,6 +624,7 @@ img {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
+    text-align: center;
 }
 
 .cv_detail-close {
@@ -620,7 +641,7 @@ img {
     margin-right: var(--mb-0-25);
 }
 
-.active-modal {
+.active-cv {
     opacity: 1;
     visibility: visible;
 }
