@@ -13,6 +13,7 @@
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --footer-color: hsl(var(--hue-color), 69%, 22%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
+    --title-color-lighter: hsl(var(--hue-color), 18%, 41%);
     --shadow-color: hsl(var(--hue-color), 11%, 37%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -44,6 +45,7 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+    --mb-5: 5rem;
 
     --z-fixed: 100;
     --z-cv: 1000;
@@ -134,8 +136,12 @@ img {
 
 .section_title {
     font-size: var(--h1-font-size);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-5);
     text-align: center;
+}
+
+.section_title-cv {
+    margin-bottom: 2rem;
 }
 
 .section_subtitle {
@@ -329,12 +335,13 @@ img {
 
 .home_title {
     font-family: 'Source Code Pro', monospace;
-    font-size: var(--big-font-size);
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--title-color);
 }
 
-.home_description {
-     margin-bottom: var(--mb-2);
-     margin-right: 6rem;
+.home_title-js {
+    color: var(--first-color);
 }
 
 /* BOUTTON */
@@ -384,10 +391,6 @@ img {
     margin-left: 9.2rem;
 }
 
-.button-about {
-    margin-left: 16.9rem;
-}
-
 .button_cv {
     display: flex;
     justify-content: center;
@@ -400,6 +403,9 @@ img {
 }
 
 /* A PROPOS */
+.about {
+    margin-top: 5rem;
+}
 .about_img {
     width: 300px;
     border-radius: var(--mb-0-5);
@@ -902,8 +908,12 @@ img {
     }
 
     .home_content {
-        padding-top: 5.5rem;
+        padding-top: 4.2rem;
         column-gap: var(--mb-2);
+    }
+
+    .home_title {
+        font-size: 4rem;
     }
 
     .about_container {

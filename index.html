@@ -80,13 +80,14 @@
                             </div>
 <!-- TITRE PRINCIPALE ET DESCRIPTION -->
                             <div class="home_data">
-                                <h1 class="home_title">
+                                <div class="home_title"></div>
+                                <!-- <h1 class="home_title">
                                     _Hello, <br>
                                     my name is <br>
                                     Lio Humb <br>
                                     I would like <br>
                                     to work for you
-                                </h1>
+                                </h1> -->
                             </div>
 
                         </div>
@@ -138,7 +139,7 @@
 
                                         <div class="skills_titles">
                                             <h3 class="skills_name">&lt;HTML&gt;</h3>
-                                            <img src="assets/img/html.png" alt="logo_html" class="skills_logo">
+                                            <!-- <img src="assets/img/html.png" alt="logo_html" class="skills_logo"> -->
                                             <span class="skills_number">80%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -149,7 +150,7 @@
                                     <div class="skills_data">
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_CSS</h3>
-                                            <img src="assets/img/css.png" alt="logo_css" class="skills_logo css">
+                                            <!-- <img src="assets/img/css.png" alt="logo_css" class="skills_logo css"> -->
                                             <span class="skills_number">60%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -160,7 +161,7 @@
                                     <div class="skills_data">
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_JavaScript</h3>
-                                            <img src="assets/img/js.png" alt="logo_js" class="skills_logo js">
+                                            <!-- <img src="assets/img/js.png" alt="logo_js" class="skills_logo js"> -->
                                             <span class="skills_number">40%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -191,7 +192,7 @@
 
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_PHP</h3>
-                                            <img src="assets/img/php.png" alt="logo_php" class="skills_logo">
+                                            <!-- <img src="assets/img/php.png" alt="logo_php" class="skills_logo"> -->
                                             <span class="skills_number">40%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -203,7 +204,7 @@
 
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_MySQL</h3>
-                                            <img src="assets/img/mysql.png" alt="logo_mysql" class="skills_logo mysql">
+                                            <!-- <img src="assets/img/mysql.png" alt="logo_mysql" class="skills_logo mysql"> -->
                                             <span class="skills_number">30%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -214,7 +215,7 @@
                                     <div class="skills_data">
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_Ruby</h3>
-                                            <img src="assets/img/ruby.png" alt="logo_ruby" class="skills_logo">
+                                            <!-- <img src="assets/img/ruby.png" alt="logo_ruby" class="skills_logo"> -->
                                             <span class="skills_number">50%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -245,7 +246,7 @@
 
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_Figma</h3>
-                                            <img src="assets/img/figma.png" alt="logo_figma" class="skills_logo">
+                                            <!-- <img src="assets/img/figma.png" alt="logo_figma" class="skills_logo"> -->
                                             <span class="skills_number">40%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -256,7 +257,7 @@
                                     <div class="skills_data">
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_Photoshop</h3>
-                                            <img src="assets/img/ps.png" alt="logo_photoshop" class="skills_logo ps">
+                                            <!-- <img src="assets/img/ps.png" alt="logo_photoshop" class="skills_logo ps"> -->
                                             <span class="skills_number">75%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -267,7 +268,7 @@
                                     <div class="skills_data">
                                         <div class="skills_titles">
                                             <h3 class="skills_name">_After Effects</h3>
-                                            <img src="assets/img/ae.png" alt="logo_after_effects" class="skills_logo ae">
+                                            <!-- <img src="assets/img/ae.png" alt="logo_after_effects" class="skills_logo ae"> -->
                                             <span class="skills_number">60%</span>
                                         </div>
                                         <div class="skills_bar">
@@ -285,7 +286,7 @@
 <!-- CURRICULUM VITÆ -->
                 <section class="cv section" id="cv">
 
-                    <h2 class="section_title">Curriculum Vitæ</h2>
+                    <h2 class="section_title section_title-cv">Curriculum Vitæ</h2>
                     <span class="section_subtitle">"Cliquez sur les titres pour en savoir plus"</span>
 
                     <div class="cv_container container">
@@ -589,12 +590,8 @@
             <script src="assets/js/main.js"></script>
             <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script> <!-- EFFET 3D -->
             <script type="text/javascript">
-                VanillaTilt.init(document.querySelectorAll(".home_title, .button, .skills_logo"), {
-                    max: 25,
-                    speed: 400
-                });
-                VanillaTilt.init(document.querySelectorAll(".cv_detail-content"), {
-                    max: 25,
+                VanillaTilt.init(document.querySelectorAll(".cv_detail-content, .about_img"), {
+                    max: 20,
                     speed: 400,
                     glare: true,
                     "max-glare": 1
