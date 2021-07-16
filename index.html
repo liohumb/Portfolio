@@ -27,13 +27,13 @@
                             </li>
                             <li class="nav_item">
                                 <a href="#skills" class="nav_link">
-                                    <i class="uil uil-file-alt nav_icon"></i>
+                                    <i class="uil uil-window-grid nav_icon"></i>
                                     <a href="#skills" class=" nav_link nav_link_title">Compétences</a>
                                 </a>
                             </li>
                             <li class="nav_item">
                                 <a href="#contact" class="nav_link">
-                                    <i class="uil uil-message nav_icon"></i> 
+                                    <i class="uil uil-comment-dots nav_icon"></i> 
                                     <a href="#contact" class=" nav_link nav_link_title">Contact</a>
                                 </a>
                             </li>
@@ -62,15 +62,21 @@
                         <div class="home_content grid">
 <!-- RESEAUX SOCIAUX -->
                             <div class="home_social">
-                                <a href="https://www.linkedin.com/in/liohumb/" target="_blank" class="home_social-icon">
-                                    <i class="uil uil-linkedin-alt"></i>
-                                </a>
-                                <a href="https://github.com/liohumb" target="_blank" class="home_social-icon">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                                <a href="https://www.instagram.com/liohumb" target="_blank" class="home_social-icon">
-                                    <i class="uil uil-instagram"></i>
-                                </a>
+                                <div class="bg_icon to-left" id="bg-icon">
+                                    <a href="https://www.linkedin.com/in/liohumb/" target="_blank" class="home_social-icon" id="social-icon">
+                                        <i class="uil uil-linkedin-alt"></i>
+                                    </a>
+                                </div>
+                                <div class="bg_icon to-left" id="bg-icon">    
+                                    <a href="https://github.com/liohumb" target="_blank" class="home_social-icon" id="social-icon">
+                                        <i class="uil uil-github-alt"></i>
+                                    </a>
+                                </div>
+                                <div class="bg_icon to-left" id="bg-icon">    
+                                    <a href="https://www.instagram.com/liohumb" target="_blank" class="home_social-icon" id="social-icon">
+                                        <i class="uil uil-instagram"></i>
+                                    </a>
+                                </div>    
                             </div>
 <!-- TITRE PRINCIPALE ET DESCRIPTION -->
                             <div class="home_data">
@@ -78,13 +84,9 @@
                                     _Hello, <br>
                                     my name is <br>
                                     Lio Humb <br>
-                                    I would like to <br>
-                                    work for you
+                                    I would like <br>
+                                    to work for you
                                 </h1>
-                                <p class="home_description">En pleine formation, j'expérimente différents langages de programations et frameworks.</p>
-                                <a href="#contact" class="button button-flex button-hero ">
-                                    Contactez moi<i class="uil uil-comment-dots button_icon"></i>
-                                </a>
                             </div>
 
                         </div>
@@ -103,13 +105,9 @@
 
                         <div class="about_data">
                             
-                            <p class="about_description">Bonjour ! Je suis un futur développeur web, dans un premier temps autodidacte et maintenant en formation MS Developpement Application.
+                            <p class="about_description">Bonjour ! Je suis un futur développeur web, dans un premier temps autodidacte et maintenant en formation MS Developpement Application, j'expérimente différents langages de programations et frameworks.
                                 Je cherche avant tout obtenir de l'expérience auprès de dévellopeur senior afin de trouver cette autonomie qui me permettra de devenir indépendant et à l'aise avec mon code.
                             </p>
-
-                            <a download="" href="#cv" class="button button-flex button-about" id="button-pdf">
-                                CV <i class="uil uil-window-grid button_icon"></i>
-                            </a>
 
                         </div>
 
@@ -537,18 +535,18 @@
                             <div class="contact_inputs grid">
                                 <div class="contact_content">
                                     <label for="name" class="contact_label">Nom</label>
-                                    <input type="text" id="nom" class="contact_input">
+                                    <input type="text" id="name" name="user_name" class="contact_input" autocomplete="off">
                                 </div>
                                 <div class="contact_content">
                                     <label for="mail" class="contact_label">Email</label>
-                                    <input type="email" id="mail" class="contact_input">
+                                    <input type="email" id="mail" name="user_email" class="contact_input" autocomplete="off">
                                 </div>
                                 <div class="contact_content">
                                     <label for="msg" class="contact_label">Mesage</label>
-                                    <textarea name="msg" id="message" cols="0" rows="7" class="contact_input"></textarea>
+                                    <textarea name="msg" id="message" name="user_message" cols="0" rows="7" class="contact_input"></textarea>
                                 </div>
                                 <div>
-                                    <a href="#" class="button button-flex button-contact">
+                                    <a href="#" type="submit" name="valider" class="button button-flex button-contact">
                                         Envoyer
                                         <i class="uil uil-message button_icon"></i>
                                     </a>
@@ -589,6 +587,19 @@
             </footer>
 <!-- JAVASCRIPT -->            
             <script src="assets/js/main.js"></script>
+            <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script> <!-- EFFET 3D -->
+            <script type="text/javascript">
+                VanillaTilt.init(document.querySelectorAll(".home_title, .button, .skills_logo"), {
+                    max: 25,
+                    speed: 400
+                });
+                VanillaTilt.init(document.querySelectorAll(".cv_detail-content"), {
+                    max: 25,
+                    speed: 400,
+                    glare: true,
+                    "max-glare": 1
+                });
+            </script>
 
         </body>
 

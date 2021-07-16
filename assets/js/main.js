@@ -38,6 +38,7 @@ function toggleSkills(){
         this.parentNode.className = 'skills_content skills_open'
     }
 }
+
 skillHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
