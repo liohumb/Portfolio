@@ -112,6 +112,11 @@ body {
     color: var(--text-color);
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
 h1,h2,h3,h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -283,8 +288,11 @@ img {
 }
 
 /* MAIN */
-.home_container {
-    gap: 1rem;
+.home {
+    height: 100vh;
+    display: grid;
+    justify-content: flex-start;
+    margin-left: 1rem;
 }
 
 /* PRESENTATION */
@@ -903,6 +911,10 @@ img {
         margin: 0;
     }
 
+    .home {
+        margin-left: 10rem;
+    }
+
     .home_container {
         row-gap: 5rem;
     }
@@ -914,6 +926,7 @@ img {
 
     .home_title {
         font-size: 4rem;
+        margin-left: 10rem;
     }
 
     .about_container {
