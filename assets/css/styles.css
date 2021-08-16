@@ -440,7 +440,7 @@ img {
 .skills_header {
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-1);
     cursor: pointer;
 }
 
@@ -555,6 +555,18 @@ img {
 
 .skills_aftereffects {
     width: 60%;
+}
+
+.skills_git {
+    width: 65%;
+}
+
+.skills_terminal {
+    width: 75%;
+}
+
+.skills_mac {
+    width: 85%;
 }
 
 .skills_close .skills_list {
