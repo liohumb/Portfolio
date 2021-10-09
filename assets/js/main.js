@@ -14,7 +14,7 @@ if (navClose) {
         navMenu.classList.remove('show-menu')
     })
 }
-// VARIABLE BOUTTON MENU
+// VARIABLE BOUTON MENU
 const navLink = document.querySelectorAll('.nav_link')
 // MASQUER MENU LORS DU CLICK (HOME, COMPETENCES, CONTACT)
 function linkAction() {
@@ -129,7 +129,7 @@ const skillsContent = document.getElementsByClassName('skills_content'),
 function toggleSkills(){
     let itemClass = this.parentNode.className
 
-    for(i = 0; i < skillsContent.length; i++){
+    for(let i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills_content skills_close'
     }
     if(itemClass === 'skills_content skills_close'){

@@ -1,5 +1,6 @@
 /* FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Code+Pro&display=swap');
+/*noinspection CssUnknownTarget*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Code+Pro&display=swap");
 
 /* VARIABLE */
 :root {
@@ -352,7 +353,7 @@ img {
     color: var(--first-color);
 }
 
-/* BOUTTON */
+/* BOUTON */
 .button {
     background-color: var(--first-color);
     color: #fff;
@@ -419,7 +420,7 @@ img {
     border-radius: var(--mb-0-5);
     justify-self: center;
     align-self: center;
-    box-shadow: 0px 0px 50px var(--shadow-color);
+    box-shadow: 0 0 50px var(--shadow-color);
 }
 
 .about_description {
@@ -491,21 +492,6 @@ img {
     opacity: var(--opacity);
 }
 
-.css {
-    margin-left: 1rem;
-}
-
-.js, .ps {
-    margin-right: 3rem;
-}
-
-.mysql {
-    margin-right: 1rem;
-}
-.ae {
-    margin-right: 5rem;
-}
-
 .skills_bar,
 .skills_percentage{
      height: 5px;
@@ -522,23 +508,31 @@ img {
 }
 
 .skills_html {
-     width: 80%;
+     width: 90%;
 }
 
 .skills_css {
-     width: 75%;
+     width: 80%;
+}
+
+.skills_sass {
+     width: 50%;
 }
 
 .skills_js {
-    width: 60%;
+    width: 75%;
 }
 
 .skills_php {
-     width: 40%;
+     width: 70%;
+}
+
+.skills_symfony {
+     width: 75%;
 }
 
 .skills_mysql {
-    width: 30%;
+    width: 60%;
 }
 
 .skills_ruby {
@@ -652,6 +646,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+    -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
     display: flex;
     align-items: center;
