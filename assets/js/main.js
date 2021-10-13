@@ -26,6 +26,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 //TITRE HOME
 class TextScramble {
+    el;
+    queue;
+    frameRequest;
+    frame;
+    chars;
     constructor(el) {
       this.el = el
       this.chars = '!<>-_\\/[]{}—=+*^?#________'
@@ -93,6 +98,9 @@ randomChar() {
   return this.chars[Math.floor(Math.random() * this.chars.length)]
 }
 
+    resolve() {
+
+    }
 }
 
 const phrases = [
